@@ -7,7 +7,7 @@ for i in range(m):
         if i%2 == 0:
             maps[j][i] = num
         else:
-            maps[n-i-j][i] = num
+            maps[n-1-j][i] = num
         num+=1
 
 for i in maps:
