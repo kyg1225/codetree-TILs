@@ -1,3 +1,6 @@
 s, char = input().split()
 
-print(s.index(char))
+if char in s:
+    print(s.index(char))
+else:
+    print('No')
