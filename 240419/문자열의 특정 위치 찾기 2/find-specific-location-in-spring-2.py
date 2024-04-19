@@ -1,4 +1,4 @@
-s = ['apple', 'banana', 'grape', 'bluberry', 'orange']
+s = ['apple', 'banana', 'grape', 'blueberry', 'orange']
 
 char = input()
 
