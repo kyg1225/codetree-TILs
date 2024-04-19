@@ -1,11 +1,7 @@
-s = list(map(str, input().split()))
+s1 = input()
+s2 = input()
+s3 = input()
 
-maxi = 0
-mini = 0
-for i in s:
-    if maxi <len(i):
-        maxi = len(i)
-    if mini > len(i):
-        mini = len(i)
+result = [len(s1), len(s2), len(s3)]
 
-print(maxi - mini)
+print(max(result) - min(result))
