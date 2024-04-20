@@ -1,9 +1,9 @@
 n = int(input())
 s = list(input() for _ in range(n))
 
-maxi = ''
+mini = ''
 for i in range(len(s)-1):
-    if ord(s[i][0])>ord(s[i+1][0]):
-        maxi = s[i+1]
+    if ord(s[i][0]) == 65:
+        mini = s[i]
 
-print(maxi)
+print(mini)
