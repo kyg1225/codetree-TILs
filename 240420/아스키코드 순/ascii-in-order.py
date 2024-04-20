@@ -1,9 +1,14 @@
 n = int(input())
 s = list(input() for _ in range(n))
 
-mini = ''
-for i in range(len(s)-1):
-    if ord(s[i][0]) == 65:
-        mini = s[i]
+result  = []
+for i in s:
+    result.append(i[0])
 
-print(mini)
+mini = result[0]
+
+for i in result:
+    if ord(i)<ord(mini):
+        mini=i
+
+print(s[result.index(mini)])
