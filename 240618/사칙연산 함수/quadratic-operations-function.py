@@ -23,4 +23,4 @@ elif o == '*':
 elif o == '/':
     print(f'{a} {o} {c} = {div(int(a), int(c))}')
 else:
-    False
+    print('False')
