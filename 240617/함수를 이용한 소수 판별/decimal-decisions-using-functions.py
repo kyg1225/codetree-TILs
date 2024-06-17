@@ -6,10 +6,11 @@ def total(n1, n2):
     return total
 
 def is_prime(num):
-    for i in range(2, num):
-        if num%i == 0:
-            return False
-    return True
+    if num != 1:
+        for i in range(2, num):
+            if num%i == 0:
+                return False
+        return True
 
 
 a, b = map(int, input().split())
