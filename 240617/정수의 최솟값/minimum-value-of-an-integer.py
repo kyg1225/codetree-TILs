@@ -10,7 +10,7 @@ def smallest(n1, n2, n3):
                 print(n2)
         elif n3 < n1:
             if n3 < n2 or n3 == n2:
-                print(n1)
+                print(n3)
     
 
 a, b, c = map(int, input().split())
