@@ -5,7 +5,7 @@ def is_2021y(n1, n2):
         elif n1%2==0:
             if n1==2 and n2<=28:
                 return True
-            elif n2<=30:
+            elif n1!=2 and n2<=30:
                 return True
     return False
 
