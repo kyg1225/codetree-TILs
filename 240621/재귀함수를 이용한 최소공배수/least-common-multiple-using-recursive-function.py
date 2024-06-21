@@ -14,5 +14,7 @@ def solution(array):
         array.append(lcm(array.pop(), array.pop()))
         if len(array) == 1:
             return array[0]
-
-print(solution(arr))
+if n==1:
+    print(arr[0])
+else:
+    print(solution(arr))
