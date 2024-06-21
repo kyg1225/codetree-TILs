@@ -4,7 +4,7 @@ class Secret:
         self.place = place
         self.times = times
 
-s1, s2, s3 = map(str, input().split())
+s1, s2, s3 = tuple(input().split())
 
 secret = Secret(s1, s2, s3)
 print('secret code :', secret.code)
