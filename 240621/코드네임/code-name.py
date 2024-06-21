@@ -8,11 +8,9 @@ for _ in range(5):
     code, sc = tuple(input().split())
     code_names.append(CodeName(code, int(sc)))
 
-lowest = code_names[0].score
-cd = code_names[0].code_name
+mini = 0
 for i in range(5):
-    if lowest > code_names[i].score:
-        lowest = code_names[i].score
-        cd = code_names[i].code_name
+    if code_names[mini].score > code_names[i].score:
+        mini = i
 
-print(cd, lowest)
+print(code_names[mini].code_name, code_names[mini].score)
