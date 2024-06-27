@@ -1,3 +1,9 @@
 a, b, c, d = map(int, input().split())
 
-print((c-a)*60+(d-c)-1)
+h = c - a
+if d < b:
+    m = b - d
+    print(h*60 - m)
+else:
+    m = d - b
+    print(h*60 + m)
