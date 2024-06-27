@@ -7,4 +7,4 @@ if m2-m1 > 0:
         day += day_of_month[i]
     print(day+d2+(day_of_month[m1]-d1))
 else:
-    print(d2-d1)
+    print(day + d2-d1)
