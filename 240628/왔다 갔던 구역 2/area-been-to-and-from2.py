@@ -8,12 +8,12 @@ cur = 1000
 for x, d in moving:
     if d=='R':
         for i in range(int(x)):
-            checked[i]+=1
-        cur += int(x)
+            checked[cur]+=1
+            cur += 1
     else:
         for i in range(int(x)):
-            checked[i]+=1
-        cur -= int(x)
+            cur -= 1
+            checked[cur]+=1
 
 cnt = 0
 for i in checked:
