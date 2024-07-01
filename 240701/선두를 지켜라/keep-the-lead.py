@@ -17,15 +17,15 @@ for _ in range(m):
         b_vt[time_b] += v
         time_b += 1
 
-wins = 'B'
+wins = []
 cnt = 0
 for i in range(time_a):
     if a_vt[i] > b_vt[i]:
-        if wins != 'A':
-            wins = 'A'
-            cnt += 1
+        wins.append('A')
     elif a_vt[i] < b_vt[i]:
-        if wins != 'B':
-            wins = 'B'
-            cnt += 1
+        wins.append('B')
+
+for i in range(1, len(wins)):
+    if wins[i] != wins[i-1]:
+        cnt+=1
 print(cnt)
