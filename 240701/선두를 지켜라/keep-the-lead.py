@@ -17,7 +17,7 @@ for _ in range(m):
         b_vt[time_b] += v
         time_b += 1
 
-wins = 'A'
+wins = 'B'
 cnt = 0
 for i in range(time_a):
     if a_vt[i] > b_vt[i]:
