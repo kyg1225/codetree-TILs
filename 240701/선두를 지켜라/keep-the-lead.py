@@ -1,4 +1,4 @@
-MAX_T = 20
+MAX_T = 1000000
 n, m = map(int, input().split())
 
 a_vt, b_vt = [0]*(MAX_T+1), [0]*(MAX_T+1)
