@@ -1,4 +1,4 @@
-MAX_T = 1000000
+MAX_T = 20
 n, m = map(int, input().split())
 
 a_vt, b_vt = [0]*(MAX_T+1), [0]*(MAX_T+1)
@@ -17,8 +17,15 @@ for _ in range(m):
         b_vt[time_b] += v
         time_b += 1
 
-ans = 0
-for i in range(1, time_b):
+wins = 'A'
+cnt = 0
+for i in range(time_a):
     if a_vt[i] > b_vt[i]:
-        ans += 1
-print(ans)
+        if wins != 'A':
+            wins = 'A'
+            cnt += 1
+    elif a_vt[i] < b_vt[i]:
+        if wins != 'B':
+            wins = 'B'
+            cnt += 1
+print(cnt)
