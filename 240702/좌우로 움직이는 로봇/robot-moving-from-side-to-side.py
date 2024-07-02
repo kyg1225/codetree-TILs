@@ -18,7 +18,7 @@ for _ in range(m):
         time_b += 1
 
 cnt = 0
-for i in range(2, time_a+1):
+for i in range(1, time_a+1):
     if pos_a[i] == pos_b[i]:
         cnt+=1
 
