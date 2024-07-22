@@ -15,6 +15,8 @@ for i in range(n-1):
         if cnt >= 3:
             result += 1
             cnt=0
+        else:
+            cnt=0
         for dx, dy in zip(dxs, dys):
             nx, ny = x[i]+dx, y[j]+dx
             # print(nx, ny)
