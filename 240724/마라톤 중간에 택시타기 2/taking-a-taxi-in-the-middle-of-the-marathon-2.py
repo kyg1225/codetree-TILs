@@ -9,7 +9,7 @@ for i in range(1, n-1):
     dist = 0
     prev_idx = 0
     for j in range(1, n):
-        if j==1:
+        if j==i:
             continue
         dist += abs(arr[prev_idx][0] - arr[j][0]) + abs(arr[prev_idx][1] - arr[j][1])
         prev_idx = j
