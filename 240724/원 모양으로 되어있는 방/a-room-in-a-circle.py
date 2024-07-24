@@ -10,7 +10,7 @@ for i in range(n):
     sum_dist = 0
     for j in range(n):
         dist = (j+n-i)%n
-        sum_dist += dist * arr[j]
+        sum_dist += dist * people[j]
 
     min_dist = min(min_dist, sum_dist)
 
