@@ -2,8 +2,9 @@ n, k = map(int, input().split())
 arr = list(map(int, input().split()))
 
 maxi = 0
-for i in range(n-2):
+for i in range(n-k+1):
     result = 0
-    result = arr[i]+arr[i+1]+arr[i+2]
+    for j in range(i, i+k):
+        result += arr[j]
     maxi = max(result, maxi)
 print(maxi)
